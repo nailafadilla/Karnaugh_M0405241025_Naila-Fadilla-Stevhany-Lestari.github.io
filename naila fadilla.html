@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mengenal Sedikit Tentang Naila</title>
+  <style>
+    :root{
+      --bg:#f6f8fb;
+      --card:#ffffff;
+      --accent:#5b6ef6;
+      --muted:#6b7280;
+      --shadow: 0 6px 18px rgba(35,40,70,0.08);
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:linear-gradient(180deg, var(--bg), #eef2ff 120%);
+      color:#0f172a;
+      line-height:1.5;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:32px;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
+      min-height:100vh;
+    }
+
+    .container{
+      width:100%;
+      max-width:900px;
+    }
+
+    .card{
+      background:var(--card);
+      border-radius:14px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      display:flex;
+      gap:24px;
+      align-items:flex-start;
+    }
+
+    .avatar {
+      width:140px;
+      height:140px;
+      border-radius:12px;
+      background:linear-gradient(135deg,#eef2ff,#f7f9ff);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      color:var(--accent);
+      font-size:28px;
+      flex-shrink:0;
+      border:1px solid rgba(91,110,246,0.12);
+    }
+
+    .meta h1{
+      margin:0;
+      font-size:22px;
+      letter-spacing:0.2px;
+    }
+    .meta p{
+      margin:6px 0 0 0;
+      color:var(--muted);
+      font-size:14px;
+    }
+
+    .details{
+      margin-top:12px;
+      display:flex;
+      gap:12px;
+      flex-wrap:wrap;
+    }
+
+    .chip{
+      background:#f1f5ff;
+      color:var(--accent);
+      padding:8px 12px;
+      border-radius:999px;
+      font-weight:600;
+      font-size:13px;
+      border:1px solid rgba(91,110,246,0.06);
+    }
+
+    .about{
+      margin-top:18px;
+      color:#111827;
+      font-size:15px;
+      max-width:680px;
+    }
+
+    .footer{
+      margin-top:18px;
+      display:flex;
+      gap:12px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:10px 14px;
+      border-radius:10px;
+      text-decoration:none;
+      font-weight:600;
+      background:var(--accent);
+      color:white;
+      box-shadow: 0 6px 14px rgba(91,110,246,0.14);
+    }
+
+    @media (max-width:720px){
+      .card{
+        flex-direction:column;
+        padding:18px;
+      }
+      .avatar{width:110px;height:110px;font-size:22px;}
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main" aria-labelledby="title">
+    <article class="card" aria-label="Deskripsi diri Naila">
+      <div class="avatar" aria-hidden="true">NF</div>
+
+      <div>
+        <header class="meta">
+          <h1 id="title">Mengenal Sedikit Tentang Naila</h1>
+          <p>Nama: <strong>Naila Fadilla Stevhany Lestari</strong> · NIM: <strong>M0405241025</strong></p>
+        </header>
+
+        <div class="details" role="list" aria-label="Informasi singkat">
+          <div class="chip" role="listitem">Program Studi: Artificial Intelligence</div>
+          <div class="chip" role="listitem">Mahasiswa IPB University</div>
+        </div>
+
+        <section class="about" aria-labelledby="about-heading">
+          <h2 id="about-heading" style="font-size:16px;margin:14px 0 8px 0;">Tentang Saya</h2>
+          <p>
+            Aku salah satu mahasiswa Program Studi Artificial Intelligence. Awalnya sama sekali nggak
+            kepikiran bakal masuk Program Studi Artificial Intelligence—rasanya asing dan agak ragu di awal.
+            Tapi ternyata setiap hari selalu ada hal baru yang bikin penasaran untuk dipelajari.
+          </p>
+          <p>
+            Meski bukan pilihan pertama, sekarang aku percaya kalau jalan ini sudah terbaik. Tinggal
+            dijalani dengan semangat dan niat belajar yang kuat.
+          </p>
+        </section>
+
+        <div class="footer">
+          <a class="btn" href="#" onclick="alert('Terima kasih telah membaca!')">Hubungi Naila</a>
+          <small style="color:var(--muted)">Terakhir diperbarui: <time datetime="2025-09-10">10 Sep 2025</time></small>
+        </div>
+      </div>
+    </article>
+  </main>
+</body>
+</html>
